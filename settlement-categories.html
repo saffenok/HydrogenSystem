@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паровая конверсия природного газа</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__container container">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo" class="header__logo">
+            </a>
+            <p class="paragraph-reset header__title">
+                Интеграционная платформа для оценки жизненного цикла водородных технологий
+            </p>
+            <a href="#" class="btn header__btn">
+                Связаться с нами
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <!-- Табы (меню слева) -->
+            <div class="tabs">
+                <div class="menu-wrapper">
+                    <div class="menu">
+                        <h3 class="head-reset menu__head">Категории расчетов</h3>
+                        <ul class="list-reset menu__nav">
+                            <li class="menu__item">
+                                <button class="btn menu__btn menu__btn_active menu__btn_first" data-path="one">
+                                    Паровая конверсия природного газа
+                                </button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="btn menu__btn" data-path="two">
+                                    Электролиз
+                                </button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="btn menu__btn menu__btn_last" data-path="three">
+                                    Транспортировка и хранение
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="" class="btn tabs__btn">Рассчитать</a>
+                    </div>
+                </div>
+
+
+                <!-- Контент табов -->
+                <div class="content">
+                    <!-- Паровая конверсия природного газа -->
+                    <div class="content__wrapper content__wrapper_active" data-target="one">
+
+                        <div class="gas">
+                            <img class="gas__img" src="img/schema_gas.svg" alt="schema">
+
+                            <div class="table-wrapper_1">
+                                <table class="gas__table_1 table1" border="1" cellpadding="4">
+                                    <thead>
+                                        <tr>
+                                            <th class="table__left">
+                                                Энергетический микс
+                                            </th>
+                                            <th class="table__right">
+                                                %
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table__left">
+                                                Газ
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Уголь
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Дизель
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Гидро
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Ветер
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Солнце
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="table-wrapper_2">
+                                <table class="gas__table_2 table2" border="1" cellpadding="4">
+                                    <thead>
+                                        <tr>
+                                            <th class="table__left">
+                                                Состав сжигаемого газа
+                                            </th>
+                                            <th class="table__right">
+                                                %
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table__left">
+                                                Метан
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Этан
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Пропан
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Бутан
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__left">
+                                                Пентан
+                                            </td>
+                                            <td class="table__right">
+                                                <input class="table__input" type="number">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- input -->
+                            <input class="schema-input gas__input_1" type="number" name="" id="">
+                            <input class="schema-input gas__input_2" type="number" name="" id="">
+                            <input class="schema-input gas__input_3" type="number" name="" id="">
+                            <input class="schema-input gas__input_4" type="number" name="" id="">
+                            <input class="schema-input gas__input_5" type="number" name="" id="">
+                            <input class="schema-input gas__input_6" type="number" name="" id="">
+                            <input class="schema-input gas__input_7" type="number" name="" id="">
+                            <input class="schema-input gas__input_8" type="number" name="" id="">
+
+                            <!-- всплывашки-подсказки -->
+                            <div class="schema-div gas__div_1" id="gas__div_1"></div>
+                            <div class="schema-div gas__div_2" id="gas__div_2"></div>
+                            <div class="schema-div gas__div_3" id="gas__div_3"></div>
+                            <div class="schema-div gas__div_4" id="gas__div_4"></div>
+                            <div class="schema-div gas__div_5" id="gas__div_5"></div>
+                            <div class="schema-div gas__div_6" id="gas__div_6"></div>
+                            <div class="schema-div gas__div_7" id="gas__div_7"></div>
+                            <div class="schema-div gas__div_8" id="gas__div_8"></div>
+                            <div class="schema-div gas__div_9" id="gas__div_9"></div>
+                            <div class="schema-div gas__div_10" id="gas__div_10"></div>
+                            <div class="schema-div gas__div_11" id="gas__div_11"></div>
+                            <div class="schema-div gas__div_12" id="gas__div_12"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="content__wrapper" data-target="two">
+                        <div class="elektroliz">
+                            <img class="elektroliz__img" src="img/schema_elektroliz.svg" alt="schema">
+
+                            <!-- input -->
+                            <input class="schema-input elektroliz__input_1" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_2" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_3" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_4" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_5" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_6" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_7" type="number" name="" id="">
+                            <input class="schema-input elektroliz__input_8" type="number" name="" id="">
+                        </div>
+
+                    </div>
+
+                    <div class="content__wrapper" data-target="three">
+                        <div class="transportirovka">
+                            <img class="transportirovka__img" src="img/schema_transportirovka.svg" alt="schema">
+
+                            <!-- input -->
+                            <input class="schema-input transportirovka__input_1" type="number" name="" id="">
+                            <input class="schema-input transportirovka__input_2" type="number" name="" id="">
+                            <input class="schema-input transportirovka__input_3" type="number" name="" id="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- всплывашки от кнопки Рассчитать -->
+            <div class="calculation__negative modal">
+                <div class="modal__head">
+                    <img src="img/IconExclamationCircle.svg" alt="!" class="modal__icon">
+                    <p class="paragraph-reset modal__title">
+                        Расчет не выполнен
+                    </p>
+                </div>
+                <p class="paragraph-reset modal__descr">
+                    Введены не все значения
+                </p>
+                <a href="" class="modal__close">
+                    <img src="img/IconX.svg" alt="x" class="modal__close_icon">
+                </a>
+            </div>
+
+            <div class="calculation__positive modal">
+                <div class="modal__head">
+                    <p class="paragraph-reset modal__title">
+                        Результат расчета
+                    </p>
+                </div>
+                <p class="paragraph-reset modal__descr">
+                    ХХХХХХХХХХХ
+                    кг СО2экв/кг Н2
+                    Learn more
+                </p>
+                <a href="" class="modal__close">
+                    <img src="img/IconX.svg" alt="x" class="modal__close_icon">
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
